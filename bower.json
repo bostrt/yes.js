@@ -1,7 +1,7 @@
 {
     "name": "yes.js",
     "main": "yes.js",
-    "version": "1.0",
+    "version": "1.0.0",
     "homepage": "https://github.com/bostrt/yes.js",
     "authors": [
         "Robert Bost"
