@@ -11,7 +11,7 @@ and <tt>clearInterval</tt> JavaScript functions. <i>Yes.js</i> makes it
 a little easier to manage repeating interval calls.
 
 <h3>Install</h3>
-<tt>bower install yes</tt> or <tt>npm install yes</tt>
+<tt>bower install yes.js</tt> or <tt>npm install yes.js</tt>
 
 <h3>Examples</h3>
 ```javascript
