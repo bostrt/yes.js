@@ -1,5 +1,5 @@
-yes.js
-======
+yes.js <a href="https://codeclimate.com/github/bostrt/yes.js"><img src="https://codeclimate.com/github/bostrt/yes.js.png" /></a>
+====================================================================================================
 *(c) 2013 Robert Bost*
 
 **Author:** Robert Bost <bostrt_at_gmail-d0t-com>
