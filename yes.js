@@ -5,7 +5,45 @@
      * and <tt>clearInterval</tt> JavaScript functions. <i>Yes.js</i> makes it
      * a little easier to manage repeating interval calls.
      * 
-     * @title yes.js <a href="https://codeclimate.com/github/bostrt/yes.js"><img src="https://codeclimate.com/github/bostrt/yes.js.png" /></a>
+     * <h3>Install</h3>
+     * <tt>bower install yes</tt> or <tt>npm install yes</tt>
+     * 
+     * <h3>Examples</h3>
+     * ```javascript
+     * var myYes = new Yes();
+     * var yesID = myYes.yes(function(str) {
+     *   console.log(str);
+     * }, "Oh yes!", 1000);
+     * 
+     * // ...
+     * 
+     * yes.kill(yesID);
+     * ```
+     * 
+     * ```javascript
+     * 
+     * function getUserLocation() {
+     * ...
+     * }
+     * 
+     * var myYes = new Yes();
+     * 
+     * // Same old string
+     * myYes.yes(function(str) { 
+     *   console.log(str);
+     * }, "Oh Yes!", 1000);
+     * 
+     * // You can even pass functions!
+     * myYes.yes(function(func) {
+     *   console.log("User is at " + func());
+     * }, getUserLocation, 5000);
+     * 
+     * // ...
+     * // Let's kill both of our intervals.
+     * myYes.kill();
+     * ```
+     * 
+     * @title yes.js <a href="https://codeclimate.com/github/bostrt/yes.js"><img src="https://codeclimate.com/github/bostrt/yes.js.png" /></a> [![NPM version](https://badge.fury.io/js/yes.js.png)](http://badge.fury.io/js/yes.js) <img src="//benschwarz.github.io/bower-badges/badge@2x.png" width="130" heightb="30">
      * @overview JavaScript port of *nix command <a href="https://www.gnu.org/software/coreutils/manual/html_node/yes-invocation.html">Yes</a>.
      * @author Robert Bost <bostrt_at_gmail-d0t-com>
      * @class Yes
