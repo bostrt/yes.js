@@ -40,7 +40,7 @@
            var result = callback(arg);
            // If callback returns false, undefined, null, or empty string
            // then cancel this "yes"
-           if (!result) {
+           if (result === false) {
                clearInterval(timerId);
            }
         }, interval);
@@ -61,7 +61,7 @@
     Yes.prototype.kill = function(id) {
         // If no ID is provided, clears all current "yesses"
         if (!id) {
-            for (var i in this.yesses) {
+            for (var i = 0; i < this.yesses.length; i++) {
                 clearInterval(this.yesses[i]);
             }
         }
