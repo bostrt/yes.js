@@ -1,0 +1,26 @@
+{
+    "name": "yes",
+    "main": "Yes",
+    "version": "1.0",
+    "homepage": "https://github.com/bostrt/yes.js",
+    "author": "Robert Bost",
+    "description": "A JavaScript port of *nix's yes command.",
+    "keywords": [
+        "yes",
+        "yes.js",
+        "repeat",
+        "no",
+        "setInterval"        
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:bostrt/yes.js.git"
+    },    
+    "license": "MIT",
+    "files": [
+        "yes.js",
+        "README.md",
+        "package.json",
+        "LICENSE"
+    ]
+}
