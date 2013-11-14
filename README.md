@@ -1,4 +1,4 @@
-yes.js <a href="https://codeclimate.com/github/bostrt/yes.js"><img src="https://codeclimate.com/github/bostrt/yes.js.png" /></a> [![NPM version](https://badge.fury.io/js/yes.js.png)](http://badge.fury.io/js/yes.js) <img src="//benschwarz.github.io/bower-badges/badge@2x.png" width="130" heightb="30">
+yes.js <a href="https://codeclimate.com/github/bostrt/yes.js"><img src="https://codeclimate.com/github/bostrt/yes.js.png" /></a> [![NPM version](https://badge.fury.io/js/yes.js.png)](http://badge.fury.io/js/yes.js) <img src="http://benschwarz.github.io/bower-badges/badge@2x.png" width="130" heightb="30">
 ====================================================================================================
 *(c) 2013 Robert Bost*
 
