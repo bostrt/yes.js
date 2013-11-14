@@ -24,7 +24,7 @@
      * @param {function} callback This will be called on the given interval.
      * @param {any} arg This argument will be passed into the callback.
      * @param {int} interval The interval in milliseconds to call the callback.
-     * @returns {int} ID for this <tt>yes</tt> call. Use this ID when calling <tt>Yes.stop</tt>.
+     * @returns {int} ID for this <tt>yes</tt> call. Use this ID when calling <tt>Yes.kill</tt>.
      */
     Yes.prototype.yes = function(callback, arg, interval)
     {
@@ -50,15 +50,15 @@
     };
 
     /**
-     * Stops a repeating interval with the given <tt>ID</tt>. If <tt>ID</tt> 
+     * Kills a repeating interval with the given <tt>ID</tt>. If <tt>ID</tt> 
      * is false, null, undefined, or empty string then all repeating intervals 
-     * that were started with calls to <tt>Yes.yes</tt> will be stopped.
+     * that were started with calls to <tt>Yes.yes</tt> will be killed.
      * 
-     * @method stop
+     * @method kill
      * @param {int} id The ID of the interval you wish to cancel. You should 
      * have kept this ID when calling <tt>Yes.yes</tt>.
      */
-    Yes.prototype.stop = function(id) {
+    Yes.prototype.kill = function(id) {
         // If no ID is provided, clears all current "yesses"
         if (!id) {
             for (var i in this.yesses) {

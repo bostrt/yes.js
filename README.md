@@ -33,13 +33,13 @@ then the repeating interval will be canceled.
 
 **Returns**
 
-*int*,  ID for this <tt>yes</tt> call. Use this ID when calling <tt>Yes.stop</tt>.
+*int*,  ID for this <tt>yes</tt> call. Use this ID when calling <tt>Yes.kill</tt>.
 
-Yes.stop(id)
+Yes.kill(id)
 ------------
-Stops a repeating interval with the given <tt>ID</tt>. If <tt>ID</tt>
+Kills a repeating interval with the given <tt>ID</tt>. If <tt>ID</tt>
 is false, null, undefined, or empty string then all repeating intervals
-that were started with calls to <tt>Yes.yes</tt> will be stopped.
+that were started with calls to <tt>Yes.yes</tt> will be killed.
 
 have kept this ID when calling <tt>Yes.yes</tt>.
 
