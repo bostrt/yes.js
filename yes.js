@@ -5,7 +5,7 @@
      * and <tt>clearInterval</tt> JavaScript functions. <i>Yes.js</i> makes it
      * a little easier to manage repeating interval calls.
      * 
-     * @title yes.js 
+     * @title yes.js <a href="https://codeclimate.com/github/bostrt/yes.js"><img src="https://codeclimate.com/github/bostrt/yes.js.png" /></a>
      * @overview JavaScript port of *nix command <a href="https://www.gnu.org/software/coreutils/manual/html_node/yes-invocation.html">Yes</a>.
      * @author Robert Bost <bostrt_at_gmail-d0t-com>
      * @class Yes
