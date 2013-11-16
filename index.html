@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Yes.js by bostrt</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Yes.js</h1>
+        <h2>JavaScript clone of *nix's `yes` command.</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/bostrt/yes.js/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/bostrt/yes.js/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/bostrt/yes.js" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a name="yesjs---" class="anchor" href="#yesjs---"><span class="octicon octicon-link"></span></a>yes.js <a href="https://codeclimate.com/github/bostrt/yes.js"><img src="https://codeclimate.com/github/bostrt/yes.js.png"></a> <a href="http://badge.fury.io/js/yes.js"><img src="https://badge.fury.io/js/yes.js.png" alt="NPM version"></a> <img src="http://benschwarz.github.io/bower-badges/badge@2x.png" width="130">
+</h1>
+
+<p><em>(c) 2013 Robert Bost</em></p>
+
+<p><strong>Author:</strong> Robert Bost </p>
+
+<p><strong>Overview:</strong> JavaScript port of *nix command <a href="https://www.gnu.org/software/coreutils/manual/html_node/yes-invocation.html">Yes</a>.</p>
+
+<p><i>Yes.js</i> is basically a wrapper around the <tt>setInterval</tt>
+and <tt>clearInterval</tt> JavaScript functions. <i>Yes.js</i> makes it
+a little easier to manage repeating interval calls.</p>
+
+<h2>
+<a name="class-yes" class="anchor" href="#class-yes"><span class="octicon octicon-link"></span></a>class Yes</h2>
+
+<p><strong>Methods</strong></p>
+
+<h2>
+<a name="yesyescallback-arg-interval" class="anchor" href="#yesyescallback-arg-interval"><span class="octicon octicon-link"></span></a>Yes.yes(callback, arg, interval)</h2>
+
+<p>Calls the given callback on the given interval. The given arg passed into
+the callback on the given interval. If the callback returns <tt>false</tt>
+then the repeating interval will be canceled.</p>
+
+<p><strong>Parameters</strong></p>
+
+<p><strong>callback</strong>:  <em>function</em>,  This will be called on the given interval.</p>
+
+<p><strong>arg</strong>:  <em>any</em>,  This argument will be passed into the callback.</p>
+
+<p><strong>interval</strong>:  <em>int</em>,  The interval in milliseconds to call the callback.</p>
+
+<p><strong>Returns</strong></p>
+
+<p><em>int</em>,  ID for this <tt>yes</tt> call. Use this ID when calling <tt>Yes.kill</tt>.</p>
+
+<h2>
+<a name="yeskillid" class="anchor" href="#yeskillid"><span class="octicon octicon-link"></span></a>Yes.kill(id)</h2>
+
+<p>Kills a repeating interval with the given <tt>ID</tt>. If <tt>ID</tt>
+is false, null, undefined, or empty string then all repeating intervals
+that were started with calls to <tt>Yes.yes</tt> will be killed.</p>
+
+<p>have kept this ID when calling <tt>Yes.yes</tt>.</p>
+
+<p><strong>Parameters</strong></p>
+
+<p><strong>id</strong>:  <em>int</em>,  The ID of the interval you wish to cancel. You should</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
