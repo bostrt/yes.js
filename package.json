@@ -1,8 +1,8 @@
 {
     "name": "yes.js",
     "main": "./yes.js",
-    "version": "1.0.0",
-    "homepage": "https://github.com/bostrt/yes.js",
+    "version": "1.0.1",
+    "homepage": "http://bostrt.github.io/yes.js/",
     "author": "Robert Bost",
     "description": "A JavaScript port of *nix's yes command.",
     "keywords": [
